@@ -1,0 +1,89 @@
+/*screen supérieur à 1024*/
+@media (min-width:1024px){
+    /*ALL*/
+    body{
+        width: 1024px;
+        margin: auto;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+}
+/*screen entre 768 et 1024*/
+@media (min-width:768px) and (max-width:1024px){
+    /*ALL*/
+    body{
+        font-size: 0.7rem;
+    }
+}
+/*screen entre 360 et 768*/
+@media (min-width:360px) and (max-width:768px)
+{
+    body
+    {
+        font-size: 60%;
+    }
+    nav,section:nth-child(2) div:nth-child(2),
+    section:nth-child(3) div:nth-child(2),
+    section:nth-child(4) div:nth-child(2),
+    footer
+    {
+        grid-template-columns: 1fr !important;
+    }
+    nav div:nth-child(1)
+    {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0px;
+    }
+    nav div:nth-child(2) img{
+        display: none;
+    }
+    section:nth-child(1){
+        grid-template-columns: 1fr;
+    }
+    section:nth-child(1) div:nth-child(1), 
+    section:nth-child(1) div:nth-child(2),
+    section:nth-child(2) div:nth-child(2) div:nth-child(1), 
+    section:nth-child(2) div:nth-child(2) div:nth-child(2),
+    section:nth-child(2) div:nth-child(3),
+    section:nth-child(3) div:nth-child(2) div:nth-child(1), 
+    section:nth-child(3) div:nth-child(2) div:nth-child(2),
+    section:nth-child(3) div:nth-child(3),
+    section:nth-child(4) div:nth-child(2) div:nth-child(1), 
+    section:nth-child(4) div:nth-child(2) div:nth-child(2),
+    section:nth-child(4) div:nth-child(3)
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+    }
+    footer div:nth-child(1),footer div:nth-child(2),footer div:nth-child(3){
+        justify-content: center;
+        text-align: center;
+    }
+    section:nth-child(1) div:nth-child(2) h1
+    {
+        font-size: 1.8rem;
+    }
+    section:nth-child(1) div:nth-child(2) h2
+    {
+        font-size: 1.3rem;
+    }
+    section:nth-child(1) img
+    {
+        margin-top: 50px;
+        width: 130px;
+    }
+    section:nth-child(2) div:nth-child(2) div:nth-child(2) p,
+    section:nth-child(3) div:nth-child(2) div:nth-child(2) p,
+    section:nth-child(4) div:nth-child(2) div:nth-child(2) p
+    {
+        margin: 30px 50px;
+        font-size: 1.5rem;
+    }
+    .textprecision
+    {
+        margin: 20px 0px;
+    }
+}
